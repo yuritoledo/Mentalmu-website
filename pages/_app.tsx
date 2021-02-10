@@ -1,4 +1,3 @@
-import { AppProps } from 'next/dist/next-server/lib/router/router'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
@@ -16,7 +15,7 @@ const theme = {
   },
 }
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle />
